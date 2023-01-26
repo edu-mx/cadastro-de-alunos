@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<script src="library/FileSaver.js"></script>
+<title>Cadastro de alunos</title>
+</head>
+<body>
+<h1>Cadastro de alunos</h1>
+<label for="show">Lista de alunos cadastrados</label>
+<select id="show">
+<option selected>Aluno: ano de nacimento: Gênero:</option>
+</select>
+<p>Adicione todos os alunos logo após clique em gerar arquivo para baixar a lista completa.</p>
+<form onSubmit="salvar();">
+<button onclick="baixar();">Gerar arquivo</button>
+<br>
+<fieldset>
+<label for="nome">Nome completo</label>
+<input type="text" maxLength=30 id="nome" autoFocus required class="campo">
+<br>
+<label for="nasc">Ano de nacimento</label>
+<input type="text" maxLength=4 id="nasc" required class="campo">
+
+<br>
+<label for="genero">Gênero</label>
+<select id="genero">
+<option selected>Nada selecionado</option>
+<option>Homem</option>
+<option>Mulher</option>
+</select>
+<br>
+<button type="submit" class="submit">Cadastrar</button>
+</fieldset>
+</form>
+<p id="status">Status atual</p>
+<footer>
+<hr>
+<p>Este é um projeto criado por Eduardo Araújo (Edu-mx).</p>
+<p>Ajude-me seguindo-me nas redes sociais</p>
+<ul>
+<li><a href="https://www.instagram.com/eduardoarjo">Meu perfil no Instagram</a></li>
+<li><a href="https://www.linkedin.com/in/eduardo139ceara">Meu perfil no linkedin</a></li>
+<li><a href="https://www.github.com/edu-mx">Meu perfil no Github</a></li>
+</ul>
+<p>&copy Eduardo Araújo - 2023</p>
+</footer>
+</body>
+</html>
